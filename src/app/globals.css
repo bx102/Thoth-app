@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --nude-50: #fdf8f3;
+  --nude-100: #f7ede0;
+  --nude-200: #eedcc6;
+  --nude-300: #e2c7a8;
+  --nude-400: #d4ae87;
+  --nude-500: #c4966a;
+  --nude-600: #b07d53;
+  --nude-700: #8f6340;
+  --nude-800: #6e4c2f;
+  --nude-900: #4e3520;
+  --gold: #c9a96e;
+  --gold-light: #e8d5b0;
+  --cream: #faf5ee;
+  --warm-white: #fefcf9;
+  --background: var(--cream);
+  --foreground: var(--nude-900);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Georgia', serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: var(--nude-100);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--nude-400);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nude-600);
+}
